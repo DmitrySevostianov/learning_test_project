@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+
+	<title> {{ lesson.name }} </title>
+
+{% endblock %}
+
+
+
+{% block content %}
+	
+	<h3>  {{ lesson.name }}  </h3>
+
+	<div>
+
+	<p> {{ lesson.description }}  <p/>
+	</div>
+	
+
+	<div>
+		<a href="{% url 'learning:course_detail' lesson.course.slug %}"> Back to course description </a>
+	</div>
+
+{% endblock %}

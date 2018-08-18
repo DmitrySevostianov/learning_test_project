@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+
+{% block title %}
+
+	<title> Users app </title>
+
+{% endblock %}
+
+
+
+{% block content %}
+
+
+      <div class="starter-template">
+        <h1>about users app:</h1>
+  	
+  		 <p> 
+  		 	Users app wroten using <a href="https://wsvincent.com/django-custom-user-model-tutorial/"> this tutorial </a>
+         </p>
+
+         <p>
+         	Also, to implement e-mail auth <a href="https://stackoverflow.com/questions/37332190/django-login-with-email">this</a> topic was helpful.
+         </p>
+         <p>
+			    <a href="{% url 'signup' %}"> Signup form </a> based on <a href="https://simpleisbetterthancomplex.com/tutorial/2017/02/18/how-to-create-user-sign-up-view.html"> this tutorial</a>
+		 </p>
+
+      </div>
+
+
+{% endblock %}
